@@ -3,10 +3,11 @@
     display: flex;
     font-family: 'Kanit';
     text-transform: uppercase;
-    height: 100vh;
+    height: 90vh;
 }
 
 .heading-primary {
+    position: relative;
     width: 80%;
     margin: auto;
     justify-content: center;
@@ -21,8 +22,13 @@
     line-height: 87%;
     text-align: left;
     vertical-align: top;
-    width: 80%;
+    width: 100%;
     padding: 5px;
+    margin: 0%;
+}
+
+.heading-primary--main strong {
+    color: #eb6864;
 }
 
 .heading-primary--sub {
@@ -35,7 +41,8 @@
     line-height: 106%;
     letter-spacing: 0.29em;
     padding: 5px;
-    width: 80%;
+    margin-bottom: 40px;
+    width: 100%;
 }
 
 
@@ -44,14 +51,14 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    display:flex;
+    align-items: center;
+    text-align: right;
+    flex-direction: column;
+    justify-content: flex-end;
     font-size:30px;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
 }
-
 
 .fa-linkedin {
     color: #202030;
@@ -65,3 +72,33 @@
     color: #FFF7DE;
 }
 
+.fa-github:hover,
+.fa-github:active {
+    color: #eb6864;
+}
+.fa-linkedin:hover,
+.fa-linkedin:active {
+    background-color: #eb6864;
+}
+
+
+
+.home__resume {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border: 3px solid #FFF7DE;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 8px 16px;
+    margin: 0 auto;
+}
+
+.home__resume:hover {
+    transition: 0.2s;
+    color: #eb6864;
+    border: 3px solid #eb6864;
+}

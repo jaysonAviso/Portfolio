@@ -1,3 +1,7 @@
+.skills {
+    width: 80%;
+    margin: 0 auto 6em;
+}
 
 .skills p {
     font-family: inherit;
@@ -5,8 +9,9 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    padding: 30px;
-    margin-bottom: 250px;
+    letter-spacing: 0.8px;
+    word-spacing: 1.6px;
+    padding: 8px;
 }
 
 .heading {
@@ -17,6 +22,6 @@
     font-weight: 900;
     font-size: 46px;
     line-height: 87%;
-    padding: 30px;
-    margin-bottom: 10px;
+    padding: 8px;
+    margin: 20px 0;
 }

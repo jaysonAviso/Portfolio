@@ -1,3 +1,8 @@
+.contact {
+    width: 80%;
+    margin: 0 auto 6em;
+}
+
 .heading {
     font-family: 'Kanit';
     letter-spacing: 0.05em;
@@ -5,7 +10,44 @@
     font-style: normal;
     font-weight: 900;
     font-size: 46px;
+    letter-spacing: 0.8px;
+    word-spacing: 1.6px;
     line-height: 87%;
-    padding: 30px;
+    padding: 8px;
     margin-bottom: 10px;
 }
+.form-group {
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 8px;
+}
+
+.form-group h3 {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1.6px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.next {
+    font-family: 'Kanit';
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    width: 123px;
+    height: 40px;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+}
+
+.next:hover {
+    color: #eb6864;
+    border: 3px solid #eb6864;
+}
+
