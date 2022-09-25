@@ -1,0 +1,11 @@
+.heading {
+    font-family: 'Kanit';
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 87%;
+    padding: 30px;
+    margin-bottom: 10px;
+}

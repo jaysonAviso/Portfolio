@@ -1,0 +1,67 @@
+.home {
+    position: relative;
+    display: flex;
+    font-family: 'Kanit';
+    text-transform: uppercase;
+    height: 100vh;
+}
+
+.heading-primary {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.heading-primary--main {
+    position: relative;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 82px;
+    letter-spacing: 0.10cm;
+    line-height: 87%;
+    text-align: left;
+    vertical-align: top;
+    width: 80%;
+    padding: 5px;
+}
+
+.heading-primary--sub {
+    position: relative;
+    font-family: 'Kanit';
+    font-style: normal;
+    text-align: left;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 106%;
+    letter-spacing: 0.29em;
+    padding: 5px;
+    width: 80%;
+}
+
+
+
+.home__img-logos {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size:30px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.fa-linkedin {
+    color: #202030;
+    background-color: #FFF7DE;
+    border-radius: 4px;
+    padding: 1px 1px;
+    margin-bottom: 10px;
+}
+
+.fa-github {
+    color: #FFF7DE;
+}
+
