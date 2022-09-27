@@ -19,6 +19,10 @@
     vertical-align: middle;
 }
 
+.main-header__bars .fa {
+    display: none;
+}
+
 .main-header__bars a {
     color: #FFF7DE;
     opacity: .8;
@@ -30,4 +34,10 @@
 .main-header__bars a:active {
     color: #eb6864;
     transition: .3s;
+}
+
+@media (max-width: 767px) {
+    .main-header__bars .fa {
+        display: contents;
+    }
 }

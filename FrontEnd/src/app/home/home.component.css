@@ -1,19 +1,45 @@
 .home {
-    position: relative;
-    display: flex;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     font-family: 'Kanit';
     text-transform: uppercase;
     height: 90vh;
 }
 
 .heading-primary {
-    position: relative;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
     width: 80%;
     margin: auto;
     justify-content: center;
 }
-.heading-primary--main {
-    position: relative;
+.heading-primary span:first-child {
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+.heading-primary span:nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.heading-primary span:nth-child(3) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.heading-primary span:nth-child(4) {
+    height: 100%;
+    padding: 20% 5px 20% 0;
+    
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+.heading-primary div {
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+
+.heading-primary .heading-primary--main {
     font-family: inherit;
     font-style: normal;
     font-weight: 900;
@@ -27,12 +53,11 @@
     margin: 0%;
 }
 
-.heading-primary--main strong {
+.emp {
     color: #eb6864;
 }
 
 .heading-primary--sub {
-    position: relative;
     font-family: 'Kanit';
     font-style: normal;
     text-align: left;
@@ -41,19 +66,13 @@
     line-height: 106%;
     letter-spacing: 0.29em;
     padding: 5px;
-    margin-bottom: 40px;
     width: 100%;
 }
 
-
-
 .home__img-logos {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display:flex;
-    align-items: center;
-    text-align: right;
+    display:grid;
+    justify-self: right;
+    align-content: space-between;
     flex-direction: column;
     justify-content: flex-end;
     font-size:30px;
@@ -64,11 +83,12 @@
     color: #202030;
     background-color: #FFF7DE;
     border-radius: 4px;
-    padding: 1px 1px;
+    padding: 1px 4px;
     margin-bottom: 10px;
 }
 
 .fa-github {
+    font-size: 38px;
     color: #FFF7DE;
 }
 
@@ -80,8 +100,6 @@
 .fa-linkedin:active {
     background-color: #eb6864;
 }
-
-
 
 .home__resume {
     cursor: pointer;
@@ -101,4 +119,48 @@
     transition: 0.2s;
     color: #eb6864;
     border: 3px solid #eb6864;
+}
+
+
+@media (min-width: 1020px) and (max-width: 1300px) {
+    .heading-primary .heading-primary--main {
+        font-size: 100px;
+        letter-spacing: 0.20cm;
+        padding: 0 15px 10px;
+    }
+
+    .heading-primary--sub {
+        font-size: 38px;
+        padding: 15px;
+    }
+
+    .home__img-logos {
+        font-size:40px;
+    }
+
+    .fa-github {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+    .heading-primary .heading-primary--main {
+        font-size: 110px;
+        letter-spacing: 0.30cm;
+        padding: 0 15px 10px;
+    }
+
+    .heading-primary--sub {
+        font-size: 48px;
+        padding: 15px;
+    }
+
+    .home__img-logos {
+        font-size:50px;
+    }
+
+    .fa-github {
+        font-size: 58px;
+    }
+
 }
