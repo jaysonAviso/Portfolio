@@ -1,5 +1,5 @@
 .projects {
-    width: 80%;
+    width: 90%;
     margin: 0 auto 6em;
 }
 
@@ -30,13 +30,12 @@
 
 .project-img {
     position: relative;
-    width: 100%;
+    width: 95%;
     height: 250px;
+    margin: 8px;
     background: #FFF7DE;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 4px;
-    /* overflow: hidden; */
-    margin: 20px 8px;
 }
 
 .btn--white {

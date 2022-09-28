@@ -1,6 +1,27 @@
 <header class="main-header">
     <div><img src="./assets/JA.png" alt="Logo" class="main-header__brand"></div>
     <div class="main-header__bars">
-        <a href=""><i class="fa fa-bars"></i></a>
+        <a id="buttonMenu" (click)="navToggle()">
+            <svg width="44" height="23" viewBox="0 0 44 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="44" height="6" fill="#FFF7DE"/>
+                <rect y="17" width="44" height="6" fill="#FFF7DE"/>
+            </svg>
+        </a>
     </div>
 </header>
+<div id="sideNav">
+    <a class="closeButton" (click)="closeSideMenu()">
+    <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="17.6777" y="13.4351" width="44" height="6" transform="rotate(45 17.6777 13.4351)" fill="#FFF7DE"/>
+        <rect x="13.1128" y="44.2254" width="44" height="6" transform="rotate(-45 13.1128 44.2254)" fill="#FFF7DE"/>
+    </svg>
+    </a>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</div>
+
