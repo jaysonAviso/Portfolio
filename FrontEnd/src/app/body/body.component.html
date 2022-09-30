@@ -1,0 +1,19 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidebar mode="over" position="end">
+        <div class="closeBtn"><mat-icon (click)="sidebar.close()">close</mat-icon></div>
+        <app-nav (isClose)="closeMode($event)"></app-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content">
+            <div class="toolbar">
+                <mat-toolbar>
+                    <div><img src="./assets/JA.png" alt="Logo" class="main-header__brand"></div>
+                    <div id="sideMenu"><mat-icon  (click)="sidebar.toggle()">menu</mat-icon></div>
+                </mat-toolbar>
+            </div>
+            <div class="body" [ngClass]="getBodyClass()">
+                <router-outlet (active)="onActive()"></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

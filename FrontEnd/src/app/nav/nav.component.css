@@ -1,4 +1,4 @@
-nav {
+.navbar {
     display:flex;
     align-items: center;
     text-align: right;
@@ -6,12 +6,12 @@ nav {
     height: 100vh;
     padding: 40px 10%;
 }
-nav ul {
+.navbar ul {
     position: fixed;
     z-index: 1;
 }
 
-nav ul li {
+.navbar ul li {
     list-style-type: none;
     display: block;
     text-align: right;
@@ -20,7 +20,7 @@ nav ul li {
     box-sizing: border-box;
 }
 
-nav ul li a {
+.navbar ul li a {
     font-family: 'Kanit';
     color: #FFF7DE;
     text-decoration: none;
@@ -35,8 +35,8 @@ nav ul li a {
 
 }
 
-nav ul li a:hover,
-nav ul li a:active {
+.navbar ul li a:hover,
+.navbar ul li a:active {
     color: #eb6864;
     border-right: 3px solid #eb6864;
     opacity: 1;

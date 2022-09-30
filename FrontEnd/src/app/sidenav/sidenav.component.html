@@ -1,0 +1,9 @@
+<div class="sidenav" [ngClass]="collapsed ? 'navbar-collapsed' : ''">
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav__item" *ngFor="let data of navData">
+            <a class="sidenav-nav__link" [routerLink]="data.routerLink" routerLinkActive="active" >
+                <span class="sidenav-nav__link--text" *ngIf="collapsed">{{data.label}}</span>
+            </a>
+        </li>
+    </ul>
+</div>

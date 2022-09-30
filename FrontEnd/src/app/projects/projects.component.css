@@ -1,20 +1,25 @@
 .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Kanit';
+    text-transform: uppercase;
     width: 90%;
-    margin: 0 auto 6em;
+    height: 100vh;
 }
-
 .heading {
     font-family: 'Kanit';
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-style: normal;
     font-weight: 900;
-    font-size: 46px;
     letter-spacing: 0.8px;
     word-spacing: 1.6px;
+    font-size: 46px;
     line-height: 87%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-top: 10rem;
 }
 
 .project-name {

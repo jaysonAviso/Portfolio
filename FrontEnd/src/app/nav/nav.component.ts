@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -6,11 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  @Input() hidden = false;
+  @Output() isClose = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  isClosed() {
+    this.isClose.emit(true);
   }
 
 }

@@ -1,9 +1,9 @@
-<nav [hidden]="hidden">
+<nav class="navbar">
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a routerLink="/home" routerLinkActive="active" (click)="isClosed()">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="isClosed()">About</a></li>
+        <li><a routerLink="/skills" routerLinkActive="active" (click)="isClosed()">Skills</a></li>
+        <li><a routerLink="/projects" routerLinkActive="active" (click)="isClosed()">Projects</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" (click)="isClosed()">Contact</a></li>
     </ul>
 </nav>
