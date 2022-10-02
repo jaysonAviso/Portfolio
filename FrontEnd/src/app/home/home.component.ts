@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  
+  faFaceBook = faFacebook;
   constructor() { }
 
   ngOnInit(): void {

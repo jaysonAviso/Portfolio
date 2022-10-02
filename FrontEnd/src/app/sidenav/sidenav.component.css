@@ -63,6 +63,11 @@
     border-right: 5px solid #eb6864;
     opacity: 1;
 }
+@media (min-width: 768px) {
+    .navbar-collapsed {
+        width: 15rem;
+    }
+}
 
 @media (min-width: 1024px) {
     .navbar-collapsed {

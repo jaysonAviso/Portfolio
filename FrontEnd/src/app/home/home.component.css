@@ -30,8 +30,7 @@
 }
 .heading-primary span:nth-child(4) {
     height: 100%;
-    padding: 20% 5px 20% 0;
-    
+    padding: 1rem 5px 1.6rem 0;
     grid-row: 2/4;
     grid-column: 2/3;
 }
@@ -82,17 +81,26 @@
     text-decoration: none;
 }
 
+fa-icon {
+    font-size: 35px;
+    color: #FFF7DE;
+}
+
 .fa-linkedin {
     color: #202030;
     background-color: #FFF7DE;
     border-radius: 4px;
     padding: 1px 4px;
-    margin-bottom: 10px;
 }
 
 .fa-github {
     font-size: 38px;
     color: #FFF7DE;
+}
+
+fa-icon:hover,
+fa-icon:hover {
+    color: #eb6864;
 }
 
 .fa-github:hover,
@@ -130,6 +138,10 @@
 }
 
 @media (min-width: 640px) {
+    .heading-primary span:nth-child(4) {
+        height: 100%;
+        padding: .8rem 5px 1.6rem 0;
+    }
     
     .heading-primary .heading-primary--main {
         font-size: 90px;
@@ -149,9 +161,17 @@
     .fa-github {
         font-size: 48px;
     }
+    fa-icon {
+        font-size: 42px;
+    }
 }
 
 @media (min-width: 768px) {
+    .home {
+        justify-content: end;
+        align-items: center;
+    }
+
     .heading-primary {
         margin-right: 10%;
         padding: 5px;
@@ -175,9 +195,17 @@
     .fa-github {
         font-size: 48px;
     }
+
+    fa-icon {
+        font-size: 42px;
+    }
 }
 
 @media (min-width: 1024px) {
+    .heading-primary span:nth-child(4) {
+        height: 100%;
+        padding: 1.1rem 5px 2.1rem 0;
+    }
 
     .heading-primary .heading-primary--main {
         font-size: 105px;
@@ -196,6 +224,10 @@
 
     .fa-github {
         font-size: 58px;
+    }
+
+    fa-icon {
+        font-size: 52px;
     }
 
 }
