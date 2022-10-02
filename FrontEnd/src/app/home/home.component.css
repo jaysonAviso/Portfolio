@@ -99,9 +99,14 @@
 .fa-github:active {
     color: #eb6864;
 }
+
 .fa-linkedin:hover,
 .fa-linkedin:active {
     background-color: #eb6864;
+}
+
+.facebook {
+    color: #FFF7DE;
 }
 
 .home__resume {

@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-icon (click)="onClose()">close</mat-icon>
+  <form class="contact" [formGroup]="messageForm" method="post" (ngSubmit)="onSubmit()">
+    <h1 mat-dialog-title>Aditional Informations</h1>
+    <div mat-dialog-content>
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="messageForm.controls['email']" type="email" placeholder="your.email@example.com">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput [formControl]="messageForm.controls['name']" type="text">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Company</mat-label>
+        <input matInput [formControl]="messageForm.controls['company']" type="text">
+      </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+      <button [disabled]="!messageForm.valid" mat-button cdkFocusInitial>Send</button>
+    </div>
+  </form>
+</div>

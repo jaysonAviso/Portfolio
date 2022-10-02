@@ -1,17 +1,36 @@
 <section class="contact">
     <h1 class="heading">Contact</h1>
 
-    <form>
+    <form #contactForm="ngForm">
         <div class="form-group">
             <h3>Topic</h3>
-            <input type="text" name="topic" class="form-control">
+            <input 
+                [(ngModel)]="messages.topic" 
+                required
+                #topic="ngModel"
+                name="topic" 
+                placeholder="Talk about..." 
+                type="text" 
+                class="form-control"
+                autocomplete="off">
+            <mat-error *ngIf="topic.invalid && topic.touched" >Please enter a topic</mat-error>
         </div>
         <div class="form-group">
             <h3>Message</h3>
-            <textarea name="message" rows="5" class="form-control"></textarea>
+            <textarea 
+            [(ngModel)]="messages.message"
+            #message="ngModel"
+            name="message" 
+            required
+            maxlength="256" 
+            placeholder="I'm interested in..." 
+            rows="5" 
+            class="form-control"></textarea>
+            <!-- <mat-hint align="end"> {{message.value?.length}/256</mat-hint> -->
+            <mat-error *ngIf="message.invalid && message.touched">Please enter a message</mat-error>
         </div>
         <div class="form-group">
-            <button type="button" class="btn next">Next</button>
+            <button [disabled]="!contactForm.valid" type="button" class="btn next" (click)="openDialog()">Next</button>
         </div>
     </form>
 

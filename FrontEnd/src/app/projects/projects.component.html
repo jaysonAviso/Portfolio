@@ -1,14 +1,14 @@
 <section class="projects">
     <h1 class="heading">Projects</h1>
-    <div class="project">
-        <h3 class="project-name">Project Name</h3>
+    <div class="project" *ngFor="let project of projectsData">
+        <h3 class="project-name">{{project.name}}</h3>
         <div class="project-img">
-            <img src="" alt="">
+            <img src="{{project.img}}" alt="{{project.name}}">
             <div class="button-group">
-                <a href="#" class="btn btn--white btn--animated">Visit Site</a>
-                <a href="#" class="btn btn--white btn--animated">Source Code</a>
+                <a href="{{project.webUrl}}" target="_blank" class="btn btn--white btn--animated">Visit Site</a>
+                <a href="{{project.sourceCode}}" target="_blank" class="btn btn--white btn--animated">Source Code</a>
             </div>
         </div>
-        <div class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repudiandae magni numquam deserunt hic cupiditate unde neque, eligendi dicta id, atque ea rem iste consequuntur autem placeat est eaque alias.</div>
+        <div class="project-content">{{project.content}}</div>
     </div>
 </section>
