@@ -1,4 +1,5 @@
 using API.Services.EmailService;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,11 +25,15 @@ app.UseHttpsRedirection();
 
 app.UseCors(x => x.AllowAnyHeader()
     .AllowAnyMethod()
-    .WithOrigins("http://localhost:4200")
-    );
+    .WithOrigins("http://localhost:4200"));
 
 app.UseAuthorization();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapControllers();
+
+app.MapFallbackToController("index", "Fallback");
 
 app.Run();
