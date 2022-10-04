@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { timer } from 'rxjs';
 import { MailService } from 'src/app/_services/mail.service';
 
 @Component({
@@ -10,6 +11,8 @@ import { MailService } from 'src/app/_services/mail.service';
 })
 export class ContactModalComponent implements OnInit {
   messageForm : FormGroup;
+  isLoading = false;
+  messageSent = false;
 
   constructor(private dialogRef: MatDialog, @Inject(MAT_DIALOG_DATA) public data : any, 
     private fb: FormBuilder, private mailService: MailService) {
@@ -29,6 +32,7 @@ export class ContactModalComponent implements OnInit {
   }
 
   onSubmit() {
+    this.isLoading = true;
     let messageContent = {
       to: "jayson.aviso1@gmail.com",
       subject: this.data.topic,
@@ -39,11 +43,13 @@ export class ContactModalComponent implements OnInit {
     ${this.data.message}`
     };
 
-    console.log(messageContent);
+    
     this.mailService.sendMessage(messageContent).subscribe(() => {
       console.log('email sent!');
-      this.onClose();
-
+      this.isLoading = false;
+      this.messageSent = true;
+      setTimeout(() => { this.onClose(); }, 1000);
+      
     })
   }
 

@@ -20,4 +20,14 @@
       <button [disabled]="!messageForm.valid" mat-button cdkFocusInitial>Send</button>
     </div>
   </form>
+  <div *ngIf="isLoading" class="loading">
+    <h4>Loading...</h4>
+    <mat-icon>donut_large</mat-icon>
+  </div>
+
+  <div *ngIf="messageSent" class="loading">
+    <h4>Sent</h4>
+    <mat-icon>done</mat-icon>
+  </div>
+
 </div>
