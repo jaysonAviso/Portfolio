@@ -6,11 +6,11 @@ export  const projectsData = [
         webUrl: 'https://datingappcreated.herokuapp.com/',
         sourceCode: 'https://github.com/jaysonAviso/DatingApp'
     },
-    {
-        name: 'Natours',
-        img: './assets/Natours.png',
-        content: 'The Natours website is just a static website. this is the output of the free course tutorial for creating a website using html and css that implement scss. just to be able to create a user interface for my future Web Api creation.',
-        webUrl: 'https://natours-app-site.herokuapp.com/',
-        sourceCode: 'https://github.com/jaysonAviso/Natours'
-    },
+    // {
+    //     name: 'Natours',
+    //     img: './assets/Natours.png',
+    //     content: 'The Natours website is just a static website. this is the output of the free course tutorial for creating a website using html and css that implement scss. just to be able to create a user interface for my future Web Api creation.',
+    //     webUrl: 'https://natours-app-site.herokuapp.com/',
+    //     sourceCode: 'https://github.com/jaysonAviso/Natours'
+    // },
 ]

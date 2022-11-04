@@ -17,6 +17,12 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sendMessage()
+  {
+    var mailTo = document.getElementById("btnSend");
+    mailTo.setAttribute('href', `mailto:jayson.aviso1@gmail.com?subject=${this.messages.subject}&body=${this.messages.message}`);
+  }
+
   openDialog() {
     console.log(this.messages);
     this.dialogRef.open(ContactModalComponent, {
